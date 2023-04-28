@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_margin="@dimen/_15sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                android:layout_width="@dimen/_150sdp"
+                android:layout_height="@dimen/_75sdp"
+                android:id="@+id/list_video"
+                app:autoPlay="false"
+                app:videoId="M1jE3W3_NTQ"/>
+
+            <TextView
+                android:id="@+id/vide_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_9sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:layout_toRightOf="@id/list_video"
+                android:text="video title"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/vide_sub_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/vide_title"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginLeft="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_14sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:layout_marginBottom="@dimen/_13sdp"
+                android:layout_toRightOf="@id/list_video"
+                android:text="video subtitle"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</layout>
